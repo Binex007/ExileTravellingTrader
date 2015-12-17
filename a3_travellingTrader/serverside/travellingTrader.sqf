@@ -11,7 +11,7 @@ if (!isServer) exitWith {};
 
 _world = (toLower worldName);
 
-	// Default to Chernarus
+	// По умолчанию Черноруссия 
 	_spawnCenter = [7652.9634, 7870.8076,0];
 	_max = 7500;
 	_wayPointOne = getMarkerPos "NEAF Aircraft Traders";
@@ -39,7 +39,7 @@ _mindist = 20; // Минимальное расстояние от ближай�
 _water = 0; // водный режим 0: не может быть в воде 1: может быть в воде или нет, 2: должен быть в воде
 _shoremode = 0; // 0: не нужно быть на берег, 1: должны быть на берегу
 
-_possiblePosStart = [_wayPointOne,100,300,_mindist,_water,20,_shoremode] call BIS_fnc_findSafePos; //Use this if you want a completely random spawn location
+_possiblePosStart = [_wayPointOne,100,300,_mindist,_water,20,_shoremode] call BIS_fnc_findSafePos; //Используйте это, если вы хотите совершенно случайное место появления 
 
 // Создайте трейдера и убедиться, что он не реагирует на выстрелы 
 
