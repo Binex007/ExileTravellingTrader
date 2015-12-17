@@ -34,14 +34,14 @@ if (_world isEqualTo 'altis') then
 	_wayPoints = [_wayPointOne,_wayPointTwo,_wayPointThree,_wayPointFour,_wayPointOne];
 };
  
-_min = 1500; // minimum distance from the center position (Number) in meters
-_mindist = 20; // minimum distance from the nearest object (Number) in meters, ie. create waypoint this distance away from anything within x meters..
-_water = 0; // water mode 0: cannot be in water , 1: can either be in water or not , 2: must be in water
-_shoremode = 0; // 0: does not have to be at a shore , 1: must be at a shore
+_min = 1500; // Минимальное расстояние от позиции центра (число) в метрах
+_mindist = 20; // Минимальное расстояние от ближайшего объекта (число) в метрах, т. е.. создать точку это расстояние от чего-нибудь в пределах х метров..
+_water = 0; // водный режим 0: не может быть в воде 1: может быть в воде или нет, 2: должен быть в воде
+_shoremode = 0; // 0: не нужно быть на берег, 1: должны быть на берегу
 
 _possiblePosStart = [_wayPointOne,100,300,_mindist,_water,20,_shoremode] call BIS_fnc_findSafePos; //Use this if you want a completely random spawn location
 
-// Create the trader and ensure he does not react to gunfire or being shot at.
+// Создайте трейдера и убедиться, что он не реагирует на выстрелы 
 
 _group = createGroup resistance;
 _group setCombatMode "BLUE";
@@ -86,7 +86,7 @@ _mk = createMarker ["TraderLocation",_traderPos];
 "TraderLocation" setMarkerType "mil_warning";
 "TraderLocation" setMarkerText "Travelling Trader";
 
-// Make trader stand still when players are near him.
+// трейдер стоит до сих пор, пока игроки находятся рядом с ним.
 while {true} do
 	{
 		_pos = position _vehicleObject;
