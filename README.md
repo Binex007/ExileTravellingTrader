@@ -1,7 +1,7 @@
 # ExileTravellingTrader
 Скрипт Путешествующий Торговец для Exile mod.
 
-ля добавления к торговцу товара , измените Exile_Trader_CommunityCustoms в миссии config.cpp
+для добавления торговцу товара , измените Exile_Trader_CommunityCustoms в миссии config.cpp
 
 Вам нужно будет отредактировать маркер путевые точки на карте, или стационарные позиций travellingTrader.sqf
 
