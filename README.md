@@ -1,9 +1,9 @@
 # ExileTravellingTrader
-A travelling trader script for Exile mod.
+Скрипт Путешествующий Торговец для Exile mod.
 
-To add items to the trader, edit Exile_Trader_CommunityCustoms in your mission config.cpp
+ля добавления к торговцу товара , измените Exile_Trader_CommunityCustoms в миссии config.cpp
 
-You will need to adjust the waypoints to match the marker names or fixed positions on your map in travellingTrader.sqf
+Вам нужно будет отредактировать маркер путевые точки на карте, или стационарные позиций travellingTrader.sqf
 
 
 	_wayPointOne = getMarkerPos "NEAF Aircraft Traders";
@@ -15,6 +15,6 @@ You will need to adjust the waypoints to match the marker names or fixed positio
 	_wayPointSeven = getMarkerPos "Stary Traders";
 	_wayPoints = [_wayPointOne,_wayPointTwo,_wayPointThree,_wayPointFour,_wayPointFive,_wayPointSix,_wayPointSeven,_wayPointOne];
 
-If required, add this to the createUnit line in scripts.txt
+Если нужно, добавьте это к линии createUnit в файле scripts.txt
 
  !"createUnit [_possiblePosStart, _group, ""trader = this; this disableAI"
